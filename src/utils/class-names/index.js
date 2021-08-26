@@ -5,7 +5,7 @@
  *
  *  <span className={classNames({
  *               "oi": true,
- *               "oi-": currentState.isPaused,
+ *               "oi-media-play": currentState.isPaused,
  *               'oi-media-pause': !currentState.isPaused
  *             })}/>
  *
