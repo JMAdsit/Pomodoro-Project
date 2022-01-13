@@ -13,14 +13,11 @@ function TimerBar ({session, focusDuration, setFocusDuration, breakDuration, set
   let valueBar = (((currentMaxTime * 60 - currentTime) / (currentMaxTime * 60)) * 100)
   
   return       <div>
-        {/* TODO: This area should show only when there is an active focus or break - i.e. the session is running or is paused */}
         <div className="row mb-2">
           <div className="col">
-            {/* TODO: Update message below to include current session (Focusing or On Break) total duration */}
             <h2 data-testid="session-title">
               {session.label} for {currentMaxTime}:00 minutes
             </h2>
-            {/* TODO: Update message below correctly format the time remaining in the current session */}
             <p className="lead" data-testid="session-sub-title">
               {currentTimeDisplay} remaining
             </p>
@@ -34,8 +31,8 @@ function TimerBar ({session, focusDuration, setFocusDuration, breakDuration, set
                 role="progressbar"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                aria-valuenow={valueBar} // TODO: Increase aria-valuenow as elapsed time increases
-                style={{ width: `${valueBar}%` }} // TODO: Increase width % as elapsed time increases
+                aria-valuenow={valueBar}
+                style={{ width: `${valueBar}%` }} 
               />
             </div>
           </div>
