@@ -1,7 +1,3 @@
-import React, { useState } from "react";
-import classNames from "../utils/class-names";
-import useInterval from "../utils/useInterval";
-
 function nextSession(focusDuration, breakDuration) {
   /**
    * State function to transition the current session type to the next session. e.g. On Break -> Focusing or Focusing -> On Break

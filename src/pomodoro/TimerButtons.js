@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function TimerButtons ({session, focusDuration, setFocusDuration, breakDuration, setBreakDuration}) {
     return <div className="row">

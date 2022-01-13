@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import classNames from "../utils/class-names";
-import useInterval from "../utils/useInterval";
+import React from "react";
 
 function TimerBar ({session, focusDuration, setFocusDuration, breakDuration, setBreakDuration}) {
   if (!session) {

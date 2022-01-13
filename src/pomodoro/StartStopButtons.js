@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "../utils/class-names";
-import useInterval from "../utils/useInterval";
 
 function StartStopButtons ({playPause, isTimerRunning, handleStop, session, focusDuration, setFocusDuration, breakDuration, setBreakDuration}) {
   return <div className="row">

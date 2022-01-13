@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import classNames from "../utils/class-names";
 import useInterval from "../utils/useInterval";
 import TimerButtons from "./TimerButtons";
 import StartStopButtons from "./StartStopButtons";
