@@ -1,7 +1,8 @@
 import React from "react";
 import classNames from "../utils/class-names";
 
-function StartStopButtons ({playPause, isTimerRunning, handleStop, session, focusDuration, setFocusDuration, breakDuration, setBreakDuration}) {
+function StartStopButtons ({playPause, isTimerRunning, handleStop, session}) {
+  //Render timer buttons
   return <div className="row">
         <div className="col">
           <div

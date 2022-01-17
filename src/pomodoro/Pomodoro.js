@@ -52,14 +52,14 @@ function Pomodoro() {
     });
   }
   
-    //End sessions when stop button is pushed
+  //End sessions when stop button is pushed
   function handleStop(event) {
     event.preventDefault();
     setIsTimerRunning(false);
     setSession(null);
   }
   
-  
+  //Render buttons and timer bar
   return (
     <div className="pomodoro">
       <TimerButtons session={session} focusDuration={focusDuration} setFocusDuration={setFocusDuration} breakDuration={breakDuration} setBreakDuration={setBreakDuration} />

@@ -1,10 +1,12 @@
 import React from "react";
 
-function TimerBar ({session, focusDuration, setFocusDuration, breakDuration, setBreakDuration}) {
+function TimerBar ({session, focusDuration, breakDuration}) {
+  //Return nothing is there's no active session
   if (!session) {
     return null;
   }
   
+  //Generate display time and timer bar
   let currentTime = session.timeRemaining;
   let currentMinutes = Math.floor(currentTime/60);
   let currentSeconds = currentTime%60;
@@ -12,6 +14,7 @@ function TimerBar ({session, focusDuration, setFocusDuration, breakDuration, set
   let currentMaxTime = session.label === "Focusing" ? ('0' + focusDuration).slice(-2) : ('0' + breakDuration).slice(-2)
   let valueBar = (((currentMaxTime * 60 - currentTime) / (currentMaxTime * 60)) * 100)
   
+  //Render timer bar
   return       <div>
         <div className="row mb-2">
           <div className="col">
